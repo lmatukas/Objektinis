@@ -77,17 +77,18 @@ int main() {
     t.Add(44, 234);
     t.Print();
     t.Insert(555,44,0);
-    t.Print();
+    t.Print();t.Print();
     t.Insert(654444,789765,1);
     t.Print();
     t.Add(12, 23);
     t.Add(12, 23);
     t.Add(12, 23);
     t.Print();
-    t.Insert(333,789765,8);
-    t.Insert(3,789333765,3);
-    t.Add(12, 23);
-    t.Insert(333,789765,8);
+    t.Insert(333,789765,3);
+//    t.Insert(3,4,3);
+//    t.Add(12, 23);
+//    t.Insert(333,789765,8);
+//    t.Print();
     t.Print();
 }
 

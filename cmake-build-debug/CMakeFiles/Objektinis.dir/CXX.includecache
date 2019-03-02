@@ -6,27 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/Users/mac/CLionProjects/Objektinis/main.cpp
-iostream
--
-cstdlib
--
-cmath
--
-iomanip
--
-stdio.h
--
-math.h
--
-string
--
-fstream
--
-ctime
--
-cstring
--
-string
--
-

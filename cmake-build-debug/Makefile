@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Box
+
+# Build rule for target.
+Box: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Box
+.PHONY : Box
+
+# fast build rule for target.
+Box/fast:
+	$(MAKE) -f CMakeFiles/Box.dir/build.make CMakeFiles/Box.dir/build
+.PHONY : Box/fast
+
+#=============================================================================
+# Target rules for targets named Konstruktoroius
+
+# Build rule for target.
+Konstruktoroius: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Konstruktoroius
+.PHONY : Konstruktoroius
+
+# fast build rule for target.
+Konstruktoroius/fast:
+	$(MAKE) -f CMakeFiles/Konstruktoroius.dir/build.make CMakeFiles/Konstruktoroius.dir/build
+.PHONY : Konstruktoroius/fast
+
+#=============================================================================
 # Target rules for targets named Objektinis
 
 # Build rule for target.
@@ -122,6 +148,60 @@ Objektinis: cmake_check_build_system
 Objektinis/fast:
 	$(MAKE) -f CMakeFiles/Objektinis.dir/build.make CMakeFiles/Objektinis.dir/build
 .PHONY : Objektinis/fast
+
+Box.o: Box.cpp.o
+
+.PHONY : Box.o
+
+# target to build an object file
+Box.cpp.o:
+	$(MAKE) -f CMakeFiles/Box.dir/build.make CMakeFiles/Box.dir/Box.cpp.o
+.PHONY : Box.cpp.o
+
+Box.i: Box.cpp.i
+
+.PHONY : Box.i
+
+# target to preprocess a source file
+Box.cpp.i:
+	$(MAKE) -f CMakeFiles/Box.dir/build.make CMakeFiles/Box.dir/Box.cpp.i
+.PHONY : Box.cpp.i
+
+Box.s: Box.cpp.s
+
+.PHONY : Box.s
+
+# target to generate assembly for a file
+Box.cpp.s:
+	$(MAKE) -f CMakeFiles/Box.dir/build.make CMakeFiles/Box.dir/Box.cpp.s
+.PHONY : Box.cpp.s
+
+Konstruktorius/Konstruktoroius.o: Konstruktorius/Konstruktoroius.cpp.o
+
+.PHONY : Konstruktorius/Konstruktoroius.o
+
+# target to build an object file
+Konstruktorius/Konstruktoroius.cpp.o:
+	$(MAKE) -f CMakeFiles/Konstruktoroius.dir/build.make CMakeFiles/Konstruktoroius.dir/Konstruktorius/Konstruktoroius.cpp.o
+.PHONY : Konstruktorius/Konstruktoroius.cpp.o
+
+Konstruktorius/Konstruktoroius.i: Konstruktorius/Konstruktoroius.cpp.i
+
+.PHONY : Konstruktorius/Konstruktoroius.i
+
+# target to preprocess a source file
+Konstruktorius/Konstruktoroius.cpp.i:
+	$(MAKE) -f CMakeFiles/Konstruktoroius.dir/build.make CMakeFiles/Konstruktoroius.dir/Konstruktorius/Konstruktoroius.cpp.i
+.PHONY : Konstruktorius/Konstruktoroius.cpp.i
+
+Konstruktorius/Konstruktoroius.s: Konstruktorius/Konstruktoroius.cpp.s
+
+.PHONY : Konstruktorius/Konstruktoroius.s
+
+# target to generate assembly for a file
+Konstruktorius/Konstruktoroius.cpp.s:
+	$(MAKE) -f CMakeFiles/Konstruktoroius.dir/build.make CMakeFiles/Konstruktoroius.dir/Konstruktorius/Konstruktoroius.cpp.s
+.PHONY : Konstruktorius/Konstruktoroius.cpp.s
 
 main.o: main.cpp.o
 
@@ -158,7 +238,15 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... Box"
+	@echo "... Konstruktoroius"
 	@echo "... Objektinis"
+	@echo "... Box.o"
+	@echo "... Box.i"
+	@echo "... Box.s"
+	@echo "... Konstruktorius/Konstruktoroius.o"
+	@echo "... Konstruktorius/Konstruktoroius.i"
+	@echo "... Konstruktorius/Konstruktoroius.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

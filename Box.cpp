@@ -27,6 +27,7 @@ using namespace std;
 class Box {
 
 private:
+
     double L;
     double W;
     double H;
@@ -34,9 +35,13 @@ private:
 public:
 
     Box();
-    Box(int a);
-    Box(int a, int b, int c);
+
+    Box(double L);
+
+    Box(double L, double W, double H);
+
     ~Box();
+
     double turis();
 };
 
@@ -59,18 +64,16 @@ Box::Box() {
     H = 1;
 };
 
-Box::Box(int a) {
-    L = a;
-    W = a;
-    H = a;
-
+Box::Box(double L) {
+    this->L = L;
+    this->W = L;
+    this->H = L;
 };
 
-Box::Box(int a, int b, int c) {
-    L = a;
-    W = b;
-    H = c;
-
+Box::Box(double L, double W, double H) {
+    this->L = L;
+    this->W = W;
+    this->H = H;
 };
 
 Box::~Box() {
